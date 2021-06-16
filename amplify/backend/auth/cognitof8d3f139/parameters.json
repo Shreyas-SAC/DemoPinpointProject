@@ -1,0 +1,19 @@
+{
+    "identityPoolName": "demopinpointproject_identitypool_f8d3f139",
+    "allowUnauthenticatedIdentities": true,
+    "authSelections": "identityPoolOnly",
+    "resourceName": "cognitof8d3f139",
+    "sharedId": "f8d3f139",
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    }
+}
